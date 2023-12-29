@@ -9,7 +9,7 @@ public class Chrome implements DriverStrategy {
     @Override
     public WebDriver setStrategy() {
         //WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Femina Jamal/IdeaProjects/TestNG-framework/src/main/resources/chrome.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome.exe");
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--no-sandbox");
